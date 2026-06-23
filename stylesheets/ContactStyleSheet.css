@@ -1,6 +1,5 @@
 .ContactMethods{
     background-color: rgb(236, 250, 255);
-    width: 30%;
     height: 100px;
     position: relative;
     margin-top: 40px;
@@ -13,8 +12,40 @@
     justify-content: center;
 }
 .TextContent{
-    font-size: x-large;
+    transition: font-size 1s ease;
     position: relative;  
     text-align: center;
     vertical-align: middle;
+}
+@media Screen and (min-width:1200px) {
+    .TextContent{
+        font-size: 30px;
+    }
+    .ContactMethods{
+        width: 55%;
+    }
+}
+@media Screen and (max-width:1200px) {
+    .TextContent{
+        font-size: 25px;
+    }
+    .ContactMethods{
+        width: 68%;
+    }
+}
+@media Screen and (max-width:800px) {
+    .TextContent{
+        font-size: 20px;
+    }
+    .ContactMethods{
+        width: 80%;
+    }
+}
+@media Screen and (max-width:600px) {
+    .TextContent{
+        font-size: 15px;
+    }
+    .ContactMethods{
+        width: 90%;
+    }
 }
