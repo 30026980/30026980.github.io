@@ -3,7 +3,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 10px;
+    font-size: 12px;
     overflow-x: hidden;
     min-height: 100dvh;
     color: #080808;
@@ -72,7 +72,7 @@ body{
 
 .Home{
     transition: width 0.5s ease, margin 0.5s ease, filter 0.5s ease, font-size 0.5s ease;
-    font-size: 10px;
+    font-size: 12px;
     top:50%;
     transform: translateY(-52%);
     position: relative;
@@ -93,7 +93,7 @@ body{
    .Home:hover{
     margin: 0px 0px 0px 20px;
     Width:7.5%;
-    font-size: 10px;
+    font-size: 12px;
 }
 }
 @media Screen and (min-width:1200px) {
