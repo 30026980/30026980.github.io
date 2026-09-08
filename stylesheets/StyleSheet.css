@@ -85,10 +85,19 @@ body{
     border-width: 2px;
     filter:brightness(1);
 }
-
+@media Screen and (min-width:4000px) {
+   .Home{
+        width: 90px;
+   } 
+   .Home:hover{
+    margin: 0px 0px 0px 20px;
+    Width:110px;
+    font-size: 12px;
+}
+}
 @media Screen and (max-width:1200px) {
    .Home{
-        width: 6%;
+        width: 4%;
    } 
    .Home:hover{
     margin: 0px 0px 0px 20px;
@@ -96,7 +105,7 @@ body{
     font-size: 12px;
 }
 }
-@media Screen and (min-width:1200px) {
+@media Screen and (max-width:4000px) {
    .Home{
         width: 4%;
    } 
@@ -173,8 +182,29 @@ footer{
     left:0%;
     position: fixed;
     text-align: left;
-    border-top: 4px solid #080808;
 }
+
+@media Screen and (max-width:1200px) {
+    footer{
+        border-top: 4px solid #080808;
+   } 
+}
+@media Screen and (min-width:1200px) {
+    footer{
+        border-top: 3px solid #080808;
+   } 
+}
+@media Screen and (max-width:800px) {
+    footer{
+        border-top: 2px solid #080808;
+   } 
+}
+@media Screen and (max-width:600px) {
+   footer{
+        border-top: 1px solid #080808;
+   } 
+}
+
 .AllowedAnimationFooter{
     animation: 1.5s FooterMoveIn ease;
 }
@@ -206,4 +236,61 @@ footer{
 }
 .CompontsOfSections{
     
+}
+h1{
+    transform: translateY(-15px);
+    font-size: 25px;
+}
+#StaffTeamBox{
+    z-index: 100;
+    position:fixed;
+    justify-content: center; /* Centers horizontally */
+    text-align: center;
+    float: left;
+    width: 33%;
+    height:30px;
+    border-radius: 20px;
+    background-color: white;
+    border-color:black;
+    border-style:solid;
+    left: 50%;
+    transform: translate(-50%,30px);
+}
+.newsArticals{
+    text-align: center;
+    width:60%;
+    height:200px;
+    border: #080808, 6px, solid;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.FloatLeft{
+    margin-left:10%;
+    float: left;
+    animation: 1s FloatLeftMoveIn cubic-bezier(0.68,-0.55,0.27,1.55), 1.6s OpacityForFloats ease;
+}
+.FloatRight{
+    float:right;
+    margin-right:10%;
+    animation: 1s FloatRightMoveIn cubic-bezier(0.68,-0.55,0.27,1.55), 1.6s OpacityForFloats ease;
+}
+
+@keyframes FloatRightMoveIn {
+    0%{transform: translateX(1500px);}
+    100%{transform: translateX(0px);}
+}
+@keyframes FloatLeftMoveIn {
+    0%{transform: translateX(-1500px);}
+    100%{transform: translateX(0px);}
+}
+@keyframes OpacityForFloats {
+    0%{filter: opacity(0);}
+    100%{filter: opacity(100);}
+}
+.AnimationTitleOfPage{
+animation: 1.5s TitleNameMove ease;
+}
+@keyframes TitleNameMove {
+    0%{transform: translate(-50%,-1500px);    }
+    100%{transform: translate(-50%,30px);}
 }
